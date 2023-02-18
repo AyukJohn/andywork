@@ -51,6 +51,13 @@
       border-radius:50%;
       animation:animateC 2s linear infinite;
     }
+
+
+    .ring-hidden{
+      opacity: 0;
+      visibility: hidden;
+    }
+
     span
     {
       display:block;
@@ -111,5 +118,26 @@
         Loading
         <span></span>
       </div>
+
+
+
+<script>
+
+
+  setTimeout(function () {
+    fun()
+
+}, 6000)
+
+
+function fun(){
+    const loader = document.querySelector('.ring');
+
+    loader.classList.add('ring-hidden')
+    Location.replace(`http://home.html`);
+}
+
+
+</script>
 </body>
 </html>

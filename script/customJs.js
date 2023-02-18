@@ -1,7 +1,7 @@
 setTimeout(function () {
     fun()
 
-}, 6000)
+}, 2000)
 
 
 function fun(){
